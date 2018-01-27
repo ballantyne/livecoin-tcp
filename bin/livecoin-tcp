@@ -1,0 +1,41 @@
+#!/usr/bin/env node
+
+var _             = require('underscore');
+var path          = require('path');
+var Server        = require(path.join(__dirname, '..', 'lib', 'server'));
+
+var defaultFunction = function(x) { return x; };
+
+var program       = require('commander');
+program
+  .version('0.1.0')
+  .option('-p, --port    <port>',          "Port", parseInt, 11000)
+  .option('-u, --url     <url>',           "Url", defaultFunction, 'https://api.livecoin.net')
+  .option('-k, --key     <key>',           "Key")
+  .option('-s, --secret  <secret>',        "Secret")
+  .option('-c, --config  <config>',        "Config")
+  
+  .parse(process.argv);
+
+var config = {};
+
+if (program.config) {
+  config = require(program.config);
+  console.log(config);
+}
+
+if (program.port) {
+  config.port = program.port;  
+}
+if (program.url) {
+  config.url = program.url;  
+}
+if (program.key) {
+  config.key = program.key;  
+}
+if (program.secret) {
+  config.secret = program.secret;  
+}
+
+
+var server = new Server(config);

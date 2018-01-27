@@ -1,0 +1,38 @@
+{
+  "name": "livecoin-tcp",
+  "version": "1.0.0",
+  "description": "livecoin tcp proxy/pubsub api adapter",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "bin": {
+    "livecoin-tcp": "./bin/livecoin-tcp"
+  },
+  "keywords": [
+    "livecoin",
+    "altcoin"
+  ],
+  "author": "Scott Ballantyne",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.1.0"
+  },
+  "dependencies": {
+    "backbone": "^1.3.3",
+    "backoff": "^2.5.0",
+    "commander": "^2.13.0",
+    "config": "^1.29.1",
+    "function-rate-limit": "^1.1.0",
+    "is-json": "^2.0.1",
+    "joi": "^13.1.0",
+    "klass": "^1.4.1",
+    "livecoin": "^1.0.0",
+    "number-converter": "^1.2.1",
+    "polo": "^0.8.1",
+    "simple-statistics": "^5.2.1",
+    "underscore": "^1.8.3",
+    "zeromq": "^4.6.0"
+  }
+}
