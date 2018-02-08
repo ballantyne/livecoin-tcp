@@ -1,6 +1,6 @@
 {
   "name": "livecoin-tcp",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "livecoin tcp proxy/pubsub api adapter",
   "main": "index.js",
   "scripts": {
@@ -28,7 +28,7 @@
     "is-json": "^2.0.1",
     "joi": "^13.1.0",
     "klass": "^1.4.1",
-    "livecoin": "^1.0.1",
+    "livecoin": "^1.0.2",
     "number-converter": "^1.2.1",
     "polo": "^0.8.1",
     "simple-statistics": "^5.2.1",
