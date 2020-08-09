@@ -7,7 +7,7 @@ Livecoin TCP
 Here I am working on a tcp proxy that is a drop in replacement for the [Livecoin](https://livecoin.net/?from=Livecoin-ybRDrafb) npm module that I recently released.  It uses zeromq to connect to the client that has the same api as the other module that I released and it has a function that is rate limited for the two levels of api requests.  I haven't tested this alot, but it seems to be working.  Please let me know if there are any issues.
 
 
-Donations
+Tips
 ------------
 
 
